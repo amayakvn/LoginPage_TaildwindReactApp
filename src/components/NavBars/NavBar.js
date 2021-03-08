@@ -2,8 +2,10 @@ import NavBarItems from "./NavBarItems";
 import "./NavBar.css";
 function NavBar() {
   let dummyData = [
-    { label: "Home", uri: "#home" },
-    { label: "Productos", uri: "#product" },
+    { label: "Login", uri: "/login" },
+    { label: "Products", uri: "#product" },
+    { label: "List", uri: "/list" },
+    
   ];
   let navBarItems = dummyData.map((o, i)=>{
     return (

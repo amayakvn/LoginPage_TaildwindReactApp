@@ -3,7 +3,7 @@ header nav ul {
   list-style: none;
   padding: 0px;
   margin: 0px;
-  align-items: center;
+  align-items: left;
 }
 header nav ul li a{
   display: inline-flex;

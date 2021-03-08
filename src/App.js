@@ -1,21 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import NavBar from './components/NavBars/NavBar';
+import LoginPage from './components/Pages/LoginPage';
+import ListPage from './components/Pages/ListPage';
+import Todo from './components/Pages/Todo/Todo';
+import { BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 import BrandHeader from './components/BrandHeader/BrandHeader';
-import Contenido from './components/Contenido/Contenido';
-import LoginH1 from './components/Login/LoginH1';
-import LoginInput from './components/Login/LoginInput';
 
 function App() {
   return (
-    <section>
-      <BrandHeader></BrandHeader>
-      <section>
-        <Contenido>
-          <LoginH1></LoginH1>
-          <LoginInput></LoginInput>
-        </Contenido>
-      </section>
-    </section>
+    <Router>
+      <body class="bg-indigo-100">
+        <header>
+          <BrandHeader></BrandHeader>
+        </header>
+        <main>
+            <Switch>
+                <Route path="/login" exact>
+                    <LoginPage></LoginPage>
+                </Route>
+                <Route path="/list" exact>
+                    <Todo/>
+                </Route>
+            </Switch>
+        </main>
+      </body>  
+    </Router>
+   
   );
 }
 

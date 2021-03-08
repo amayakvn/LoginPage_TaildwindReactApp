@@ -1,10 +1,11 @@
 import NavBar from "../NavBars/NavBar";
 import Brand from "./Brand";
 import "./BrandHeader.css";
+
 function BrandHeader({ children }){
   return (
     <header>
-      <Brand title="Página de registro"></Brand>
+      <Brand title="Comercio"></Brand>
       <NavBar></NavBar>
     </header>
   );
